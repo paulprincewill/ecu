@@ -37,24 +37,31 @@
             </section>
 
             <!-- Important Links -->
+            <!-- @TODO Please fix the flex box -->
             <section id="important-links" class="flex-box">
-                <div class="">
+                <div class="box-sect">
                     <div class="head">Interested Students</div>
-                    <div>Requirements</div>
-                    <div>Available Courses</div>
-                    <div>School Fees</div>
+                    <div class="body">
+                        <div class="rows">Requirements</div>
+                        <div class="rows">Available Courses</div>
+                        <div class="rows">School Fees</div>
+                    </div>
                 </div>
-                <div class="">
+                <div class="box-sect">
                     <div class="head">New Students</div>
-                    <div>Admission List</div>
-                    <div>Registration</div>
-                    <div>Payments</div>
+                    <div class="body">
+                        <div class="rows">Admission List</div>
+                        <div class="rows">Registration</div>
+                        <div class="rows">Payments</div>
+                    </div>
                 </div>
-                <div class="">
+                <div class="box-sect">
                     <div class="head">Old Students</div>
-                    <div>Payments</div>
-                    <div>Results</div>
-                    <div>Clearance</div>
+                    <div class="body">
+                        <div class="rows">Payments</div>
+                        <div class="rows">Results</div>
+                        <div class="rows">Clearance</div>
+                    </div>
                 </div>
             </section>
 
@@ -62,13 +69,15 @@
             <section>
                 <div>
                     <div>
-                        <button>Courses (title)</button>
-                        <button>Requirements</button>
-                        <button>Brochure</button>
+                        <h2>Courses</h2>
+                        <span class="primary-btns">Requirements</span>
+                        <span class="secondary-btns download">Download Brochure</span>
                     </div>
                     <div>
-                        <input type="search" placeholder="Search for Course">
-                        <button>search</button>
+                        <form class="search-bar">
+                            <input type="text" placeholder="Search for Course" onfocus="this.placeholder=''" onblur="this.placeholder='Search for Course'" name="search">
+                            <button class="fa fa-search search"></button>
+                        </form>
                         <div>
                             <p>Course Title: <span></span></p>
                             <p>Short Description: <span></span></p>
@@ -77,34 +86,48 @@
                             <p>School Fees: <span></span></p>
                         </div>
                     </div>
-                    <div>
-                        <div>
+                    <div class="depart-container">
+                        <div class="departments">
                             <h3>Engineering</h3>
-                            <a href>Electrical Engineering</a>
-                            <a href="">Computer Science</a>
-                            <a href="">Mechanical Engineering</a>
-                            <p>Bachelor of Science</p>
+                            <a href>Electrical</a>
+                            <a href="">Computer</a>
+                            <a href="">Mechanical</a>
+                            <p><span>BSc.</span> <span>&#8358;180,000</span></p>
                         </div>
-                        <div>
+                        <div class="departments">
                             <h3>Engineering</h3>
-                            <a href>Electrical Engineering</a>
-                            <a href="">Computer Science</a>
-                            <a href="">Mechanical Engineering</a>
-                            <p>Bachelor of Science</p>
+                            <a href>Electrical</a>
+                            <a href="">Computer</a>
+                            <a href="">Mechanical</a>
+                            <p><span>BSc.</span> <span>&#8358;180,000</span></p>
                         </div>
-                        <div>
+                        <div class="departments">
                             <h3>Engineering</h3>
-                            <a href>Electrical Engineering</a>
-                            <a href="">Computer Science</a>
-                            <a href="">Mechanical Engineering</a>
-                            <p>Bachelor of Science</p>
+                            <a href>Electrical</a>
+                            <a href="">Computer</a>
+                            <a href="">Mechanical</a>
+                            <p><span>BSc.</span> <span>&#8358;180,000</span></p>
                         </div>
-                        <div>
+                        <div class="departments">
                             <h3>Engineering</h3>
-                            <a href>Electrical Engineering</a>
-                            <a href="">Computer Science</a>
-                            <a href="">Mechanical Engineering</a>
-                            <p>Bachelor of Science</p>
+                            <a href>Electrical</a>
+                            <a href="">Computer</a>
+                            <a href="">Mechanical</a>
+                            <p><span>BSc.</span> <span>&#8358;180,000</span></p>
+                        </div>
+                        <div class="departments">
+                            <h3>Engineering</h3>
+                            <a href>Electrical</a>
+                            <a href="">Computer</a>
+                            <a href="">Mechanical</a>
+                            <p><span>BSc.</span> <span>&#8358;180,000</span></p>
+                        </div>
+                        <div class="departments">
+                            <h3>Engineering</h3>
+                            <a href>Electrical</a>
+                            <a href="">Computer</a>
+                            <a href="">Mechanical</a>
+                            <p><span>BSc.</span> <span>&#8358;180,000</span></p>
                         </div>
                     </div>
                 </div>
@@ -126,25 +149,25 @@
                         <h3>Matriculation for newly admitted students</h3>
                         <p>Date: <span>March 27th, 2020</span></p>
                         <p class="description">This is the description that shows the description of the description of the upcomming Matriculation</p>
-                        <button>Save to Google Calendar</button>
+                        <span class="save-date">Save Date</span>
                     </div>
                     <div>
                         <h3>Matriculation for newly admitted students</h3>
                         <p>Date: <span>March 27th, 2020</span></p>
                         <p class="description">This is the description that shows the description of the description of the upcomming Matriculation</p>
-                        <button>Save to Google Calendar</button>
+                        <span class="save-date">Save Date</span>
                     </div>
                     <div>
                         <h3>Matriculation for newly admitted students</h3>
                         <p>Date: <span>March 27th, 2020</span></p>
                         <p class="description">This is the description that shows the description of the description of the upcomming Matriculation</p>
-                        <button>Save to Google Calendar</button>
+                        <span class="save-date">Save Date</span>
                     </div>
                     <div>
                         <h3>Matriculation for newly admitted students</h3>
                         <p>Date: <span>March 27th, 2020</span></p>
                         <p class="description">This is the description that shows the description of the description of the upcomming Matriculation</p>
-                        <button>Save to Google Calendar</button>
+                        <span class="save-date">Save Date</span>
                     </div>
                 </div>
             </section>
@@ -153,25 +176,15 @@
             <section>
                 <h2>Contact Us</h2>
                 <div>
-                    <form>
-                        <div class="form-group">
-                            <input type="text" name="fullName" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" name="phone" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Compose your enquiry..."></textarea>
-                        </div>
-                    </form>
+                    <div></div>
                 </div>
                 <div class="maps">
                     <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1025.7436318685611!2d5.895976803270719!3d5.3773555815258405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1041b7b0945ce259%3A0x83b876e365be9659!2sEdwin%20Clark%20University!5e1!3m2!1sen!2sng!4v1578402483432!5m2!1sen!2sng" style="border:0;" allowfullscreen=""></iframe>
                 </div>
             </section>
         </main>
+
+        <!-- Footer -->
+        <footer></footer>
     </body>
 </html>

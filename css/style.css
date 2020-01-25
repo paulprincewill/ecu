@@ -9,16 +9,14 @@
 }
 
 @font-face {
-    font-family: 'monserrat';
+    font-family: 'montserrat';
     src: url(../fonts/montserrat/Montserrat-Light.otf);
 }
 
 body{
     position: relative;
-    font-family: monserrat;
-}
-
-body > *{
+    font-family: montserrat;
+    line-height: 1.5;
 }
 
 
@@ -96,17 +94,122 @@ div.abs-container p.about{
     margin: 20px 0;
 }
 
+/* Flex-Box */
+section.flex-box{
+    display: flex;
+    max-width: 750px;
+    width: 90%;
+    margin: 0 auto;
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transform: translate(0,-50%);
+    -webkit-transform: translate(0,-50%);
+    -moz-transform: translate(0,-50%);
+    -ms-transform: translate(0,-50%);
+    -o-transform: translate(0,-50%);
+}
+div.box-sect{
+    padding: 5px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(15px,auto);
+    grid-template-areas: 'head head head'
+                        'body body body'
+                        'body body body';
+}
+div.box-sect div.head{
+    grid-area: head;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+div.box-sect div.body{
+    grid-area: body;
+}
+div.box-sect div.body div.rows{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Courses */
+.download::before{
+    content: "\f0c7";
+    font-variant: normal;
+    font-family: 'Font Awesome 5 Free';
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    line-height: normal;
+    margin-right: 5px;
+}
+form.search-bar{
+    display: flex;
+    margin: 10px 0;
+    padding: 5px 10px;
+    max-width: 550px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+form.search-bar input{
+    font-size: 18px;
+}
+form.search-bar button.search{
+    outline: none;
+    background: transparent;
+    border: none;
+    margin-left: 5px;
+}
+
+/* Departments */
+div.depart-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+div.departments{
+    flex: 23.3%;
+    /* max-width: 640px; */
+    min-width: 200px;
+    height: 150px;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    border: .5px solid #dddddd;
+}
+div.departments a{
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 10px;
+    margin: 5px 0;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+
 
 /* Buttons */
 .primary-btns{
     display: inline-block;
-    background: #008000;
+    background: #025d02;
+    text-decoration: none;
     color: #ffffff;
     padding: 5px 20px;
     outline: none;
     cursor: pointer;
     box-sizing: border-box;
-    border: 2.5px solid #626263;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -119,17 +222,17 @@ div.abs-container p.about{
     -o-transition: ease-in .6s;
 }
 .primary-btns:hover{
-    background: #0080005d;
+    background: #025d025d;
 }
 .secondary-btns{
     display: inline-block;
-    background: #0000ff;
+    background: #234567;
+    text-decoration: none;
     color: #ffffff;
     padding: 5px 20px;
     outline: none;
     cursor: pointer;
     box-sizing: border-box;
-    border: 2.5px solid #626263;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -142,17 +245,18 @@ div.abs-container p.about{
     -o-transition: ease-in .6s;
 }
 .secondary-btns:hover{
-    background: #0000ff5d;
+    background: #2345675d;
+    color: #000000;
 }
 .danger-btns{
     display: inline-block;
     background: #ff0000;
+    text-decoration: none;
     color: #ffffff;
     padding: 5px 20px;
     outline: none;
     cursor: pointer;
     box-sizing: border-box;
-    border: 2.5px solid #626263;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -169,3 +273,33 @@ div.abs-container p.about{
 }
 
 /* Forms */
+form{
+    display: block;
+    position: relative;
+    max-width: 750px;
+    width: 90%;
+    margin: 0 auto;
+}
+div.form-group{
+    display: block;
+    position: relative;
+    padding: 10px 20px;
+    border-bottom: 1px solid #454a9b;
+}
+input{
+    font-family: montserrat;
+}
+input[type='text'],input[type='email'],input[type='password']{
+    display: block;
+    width: 100%;
+    outline: none;
+    border: none;
+}
+textarea{
+    display: block;
+    padding: 10px 20px;
+    width: -webkit-fill-available;
+    width: -moz-available;
+    min-height: 150px;
+    border: 1px solid #454a9b;
+}
