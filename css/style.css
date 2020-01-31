@@ -32,7 +32,7 @@ header{
 }
 header nav{
     width: 90%;
-    max-width: 950px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 header nav ul{
@@ -65,7 +65,7 @@ main > section {
 }
 main > section > *{
     width: 90%;
-    max-width: 950px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 main > section.bg-section{
@@ -144,7 +144,7 @@ div.box-sect div.body div.rows{
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     line-height: normal;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 form.search-bar{
     display: flex;
@@ -172,7 +172,15 @@ form.search-bar button.search{
 div.depart-container{
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    margin: 20px auto;
+    overflow: hidden;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: 0px 0px 5px 3px #00000026;
 }
 div.departments{
     flex: 23.3%;
@@ -198,6 +206,86 @@ div.departments a{
     -o-border-radius: 5px;
 }
 
+/* Events */
+div.event-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+div.events{
+    /* flex: 1; */
+    min-width: 200px;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    margin: 10px auto;
+    padding: 10px;
+    border: .5px solid #dddddd;
+    box-shadow: 0 0 3px 3px #e0e0e0;
+}
+.save-date::before{
+    content: "\f02e";
+    font-variant: normal;
+    font-family: 'Font Awesome 5 Free';
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    line-height: normal;
+    margin-right: 10px;
+}
+
+
+/* Contact */
+div.contact-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+div.contact{
+    width: 90%;
+    flex: 1;
+    min-width: 250px;
+}
+div.contact label{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.phone::before{
+    content: "\f095";
+    font-variant: normal;
+    font-family: 'Font Awesome 5 Free';
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    line-height: normal;
+    margin-right: 10px;
+    font-weight: 900;
+}
+.email::before{
+    content: "\f0e0";
+    font-variant: normal;
+    font-family: 'Font Awesome 5 Free';
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    line-height: normal;
+    margin-right: 10px;
+    font-weight: 900;
+}
+.location::before{
+    content: "\f041";
+    font-variant: normal;
+    font-family: 'Font Awesome 5 Free';
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    line-height: normal;
+    margin-right: 10px;
+    font-weight: 900;
+}
+div.maps{
+    flex: 1;
+    display: block;
+    max-width: 750px;
+    width: 90%;
+    min-width: 250px;
+}
 
 
 /* Buttons */
@@ -207,6 +295,7 @@ div.departments a{
     text-decoration: none;
     color: #ffffff;
     padding: 5px 20px;
+    margin: 10px 0;
     outline: none;
     cursor: pointer;
     box-sizing: border-box;
@@ -230,6 +319,7 @@ div.departments a{
     text-decoration: none;
     color: #ffffff;
     padding: 5px 20px;
+    margin: 10px 0;
     outline: none;
     cursor: pointer;
     box-sizing: border-box;
@@ -254,6 +344,7 @@ div.departments a{
     text-decoration: none;
     color: #ffffff;
     padding: 5px 20px;
+    margin: 10px 0;
     outline: none;
     cursor: pointer;
     box-sizing: border-box;
