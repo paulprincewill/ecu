@@ -214,9 +214,9 @@ div.event-container{
 }
 div.events{
     /* flex: 1; */
-    min-width: 200px;
+    /* min-width: 200px; */
     width: 90%;
-    max-width: 400px;
+    max-width: 300px;
     height: auto;
     margin: 10px auto;
     padding: 10px;
