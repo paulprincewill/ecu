@@ -1,3 +1,72 @@
+<<<<<<< HEAD:css/style.txt
+=======
+/*
+* Do not delete my css and do not let Muhammad touch my css
+*
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'montserrat';
+    src: url(../fonts/montserrat/Montserrat-Light.otf);
+}
+
+body{
+    position: relative;
+    font-family: montserrat;
+    line-height: 1.5;
+}
+
+
+/* Header */
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    padding: 10px 0;
+    box-shadow: 0px 1px 7px 1px black;
+    background: #9dc1dd;
+    z-index: 9;
+}
+header nav{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header a.logo{
+    flex: 2;
+}
+header a.logo img {
+    width: 120px;
+}
+header nav ul{
+    float: right;
+    list-style: none;
+}
+nav ul li{
+    display: inline;
+    padding: 10px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+}
+li.portal{
+    background: #234567;
+    border: none;
+    display: inline;
+}
+.portal a{
+    color: white;
+}
+
+>>>>>>> 2895338ae485383f31b15aad5d2962a77ac33010:css/style.css
 
 /* Main */
 main{
@@ -154,7 +223,7 @@ div.event-container{
     display: flex;
     flex-wrap: wrap;
     margin: 20px auto;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 div.events{
@@ -170,7 +239,7 @@ div.events{
     height: auto;
     cursor: zoom-in;
     color: #ffffff;
-    margin: 10px auto;
+    margin: 10px 0;
     padding: 10px;
     box-shadow: 0 0 7px 1px #e0e0e0;
     border-radius: 5px;
@@ -178,6 +247,11 @@ div.events{
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    transition: .6s ease-in;
+    -webkit-transition: .6s ease-in;
+    -moz-transition: .6s ease-in;
+    -ms-transition: .6s ease-in;
+    -o-transition: .6s ease-in;
 }
 div.events h3{
     margin: 10px 0;
