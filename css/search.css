@@ -1,0 +1,52 @@
+#search_form {
+    background: white;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
+    margin: 0px;
+    margin-right: 50px;
+}
+
+#search_form input {
+    border: 0px;
+    padding: 20px 70px;
+    flex: 2;
+    font-size: 180%;
+    margin: 0px;
+    font-family: metropolis thin
+}
+
+#search_form button {
+    position: relative;
+    left: -100px;
+    bottom: -5px;
+    margin: 0px;
+    margin-right: -100px;
+    font-size: 200%;
+    background: transparent;
+    color: #333;
+    box-shadow: none;
+}
+
+
+/* ----------------------- SEARCH RESULTS ----- */
+#search_results {
+    padding: 50px;
+    border-radius: 5px;
+    margin: 30px 0px
+}
+
+#search_results > p {
+    margin-bottom: 30px;
+}
+
+#search_results > span {
+    margin: 10px;
+}
+
+#search_results > span:empty::after {
+    width: 20%
+}

@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: metropolis light, arial;
+    transition: all 0.5s;
+    line-height: 170%;
+}
+
+body {   
+    font-size: 14px
+}
+
+h1 {
+    font-family: metropolis black, arial;
+}
+
+button {
+    background:#0433BF;
+    border:0px;
+    border-radius: 3px;
+    padding: 8px 30px;
+    margin: 5px;
+    font-size: 70%;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 10px 25px #ddd;
+}
+
+button:hover {
+    box-shadow: 0px 0px 10px #666;
+}
+
+a {
+    cursor: pointer;
+    color: #0433BF
+}

@@ -1,0 +1,39 @@
+#links {
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    top: -150px;
+    margin-bottom: -150px;
+    color: #666
+}
+
+#links > div {
+    display: grid;
+    grid-template-rows: 1fr 1.7fr 1.7fr 1.7fr;
+}
+
+#links .head > span {
+    background: #0433BF;
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 80%;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+#links p {
+    position: relative;
+}
+
+#links p > a {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background: #ee2683;
+    font-size: 80%;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 4px 20px
+}

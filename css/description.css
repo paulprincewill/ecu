@@ -1,0 +1,94 @@
+#top_description {
+    background-image: url('../_assets/backgrounds/edwin-clark-university-building.jpg');
+    background-size: cover;
+    height: 100vh;
+    min-height: 600px;
+    color: white;
+    position: relative;
+}
+
+#top_description > div {
+    padding-top: 15%;
+    padding: 10%;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.7);
+}
+
+#top_description h1 {
+  font-size: 180%;
+  width: 80%;
+  color: white;
+  margin-top: 10%;
+  line-height: 130%
+}
+
+
+#top_description p {
+  font-family: 'Bitter';
+  font-size: 180%;
+  width: 70%;
+  margin: 5% 0px;
+  line-height: 145%;
+  color: white;
+}
+
+#top_description button {
+    margin-right: 30px;
+    padding: 8px 40px;
+    box-shadow: 0px 10px 25px #000;
+    background-color:#ee2683;
+    border-radius: 50px;
+    font-weight: normal;
+    font-size: 110%;
+}
+
+#top_description button:hover {
+    box-shadow: 0px 0px 10px #000
+}
+
+#top_description button i {
+  font-weight: normal;
+  font-size: 100%; 
+  padding: 0px 5px;
+  margin-left: -5px;
+  margin-bottom: 2px;
+  vertical-align: middle;
+}
+
+#top_description span {
+  display: inline-block;
+}
+
+.arrow {
+    margin-left: 20px
+}
+
+
+.arrow {
+	-webkit-animation: gif 1s infinite alternate;
+	animation: gif 1s infinite alternate;
+	position: relative;
+	font-size: 20px;
+}
+
+@keyframes gif {
+  from {
+    top: 15px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+@-webkit-keyframes gif {
+  from {
+    top: 15px;
+  }
+  to {
+    top: 0px;
+  }
+}
