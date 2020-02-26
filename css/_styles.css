@@ -41,7 +41,7 @@
 
 .top_title a:hover {
     box-shadow: 0px 0px 10px #ccc;
-}section {
+}body >section {
     border-bottom: 1px solid #ddd;
     padding: 5% 15%;
     border-bottom: 1px solid #eee
@@ -230,7 +230,119 @@
     opacity: 1;
   }
 }
-* {
+#events {
+    border-radius: 5px;
+}
+
+#events > div {
+    padding: 20px;
+    min-height: 320px;
+    position: relative;
+}
+
+#events > div > p, #events > div > h3 {
+    margin: 20px
+}
+
+#events a {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color:#ee2683;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 80%
+}
+
+#events a > i {
+    vertical-align: middle;
+}
+
+#events > div > span {
+
+    border: 1px solid #ddd;
+    padding: 5px 25px;
+    border-radius: 50px;
+    margin-right: 30px;
+    margin-left: 15px;
+    display: inline-block;
+}
+
+#events h2 {
+    font-family: metropolis black;
+    margin: 10px 20px
+}#features {
+    border: 0px;
+    border-radius: 10px;
+    overflow: hidden
+}
+
+#features > div {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: white;
+    margin: 1px;
+}
+
+#features > div:hover {
+    box-shadow: 0px 10px 25px #000
+}
+
+#features img {
+    width: 100%;
+}
+
+
+[name='details'] {
+    cursor: pointer;
+    padding: 20px 50px;
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+    left: 0px;
+    color: white;
+    font-size: 150%;
+    display: flex;
+    align-items: center;
+    z-index: 2
+}
+
+[name='details'] > p {
+    font-family: metropolis black;
+    flex: 2
+}
+
+[name='details'] > div {
+    text-align: right;
+    flex: 1;
+    font-size: 180%;
+    cursor: pointer
+}
+
+#features > div::after {
+    content: "";
+    display: block;
+    background: linear-gradient(transparent, rgba(0,0,0,1), black);
+    position: relative;
+    top: -200px;
+    margin-bottom: -200px;
+    height: 380px;
+}footer {
+    background: #333;
+    color: white;
+    padding: 5% 10%
+}
+
+#contact > div {
+    margin: 10px 0px
+}
+
+#contact > div > * {
+    margin: 15px
+}* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -293,6 +405,12 @@ a {
 .grid-3 > div:nth-child(2), 
 .grid-3 > div:nth-child(3) {
     border-top: 0px
+}
+
+
+/* -------------------- GRID-2 -----*/
+.grid-2 { 
+    grid-template-columns: auto auto;
 }#links {
     background-color: white;
     border-radius: 5px;

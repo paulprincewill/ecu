@@ -1,10 +1,13 @@
-<!-- Contact -->
-<section class="contact-sect">
-    <h2>Contact Us</h2>
+<section>
+      
+    <div class="top_title">
+        <span> Contact us <i class="pe-7s-angle-down"></i> </span>
+    </div>
+
     <div class="contact-container">
         <div class="contact">
-            <label class="phone">+234-903-4567-234 <a href="tel:" class="primary-btns">Call Now</a></label>
-            <label class="email">Support@edwinclarkuniversity.com <a href="mailto:support@edwinclarkuniversity.com" class="secondary-btns">Send Us A Message</a></label>
+            <label class="phone">+234-903-4567-234 <a href="tel:">Call Now</a></label>
+            <label class="email">Support@edwinclarkuniversity.com <a href="mailto:support@edwinclarkuniversity.com">Send Us A Message</a></label>
             <label class="location">No 18. Stupid Street, before craze road, Ugnelli. Delta State. Nigeria</label>
         </div>
 

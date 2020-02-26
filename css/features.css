@@ -1,0 +1,59 @@
+#features {
+    border: 0px;
+    border-radius: 10px;
+    overflow: hidden
+}
+
+#features > div {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: white;
+    margin: 1px;
+}
+
+#features > div:hover {
+    box-shadow: 0px 10px 25px #000
+}
+
+#features img {
+    width: 100%;
+}
+
+
+[name='details'] {
+    cursor: pointer;
+    padding: 20px 50px;
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+    left: 0px;
+    color: white;
+    font-size: 150%;
+    display: flex;
+    align-items: center;
+    z-index: 2
+}
+
+[name='details'] > p {
+    font-family: metropolis black;
+    flex: 2
+}
+
+[name='details'] > div {
+    text-align: right;
+    flex: 1;
+    font-size: 180%;
+    cursor: pointer
+}
+
+#features > div::after {
+    content: "";
+    display: block;
+    background: linear-gradient(transparent, rgba(0,0,0,1), black);
+    position: relative;
+    top: -200px;
+    margin-bottom: -200px;
+    height: 380px;
+}

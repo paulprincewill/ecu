@@ -8,3 +8,6 @@
     include "sections/links.php";
     include "sections/search.php";
     include "sections/courses.php";
+    include "sections/features.php";
+    include "sections/events.php";
+    include "sections/_footer.php";

@@ -1,0 +1,43 @@
+#events {
+    border-radius: 5px;
+}
+
+#events > div {
+    padding: 20px;
+    min-height: 320px;
+    position: relative;
+}
+
+#events > div > p, #events > div > h3 {
+    margin: 20px
+}
+
+#events a {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    background-color:#ee2683;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-size: 80%
+}
+
+#events a > i {
+    vertical-align: middle;
+}
+
+#events > div > span {
+
+    border: 1px solid #ddd;
+    padding: 5px 25px;
+    border-radius: 50px;
+    margin-right: 30px;
+    margin-left: 15px;
+    display: inline-block;
+}
+
+#events h2 {
+    font-family: metropolis black;
+    margin: 10px 20px
+}

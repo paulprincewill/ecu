@@ -1,0 +1,13 @@
+footer {
+    background: #333;
+    color: white;
+    padding: 5% 10%
+}
+
+#contact > div {
+    margin: 10px 0px
+}
+
+#contact > div > * {
+    margin: 15px
+}

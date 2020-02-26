@@ -1,46 +1,58 @@
-<!-- Events -->
-<section class="event-sect">
-    <h2>Events</h2>
-    <div class="event-container">
+<section>
 
-        <div class="events">
-            <div class="event-img">
-                <img src="images/events/matriculation.jpg">
-            </div>
-            <h3>Matriculation for newly admitted students</h3>
-            <p><b>Date:</b> <span>March 27th, 2020</span></p>
-            <p class="description">This is the description that shows the description of the description of the upcomming Matriculation</p>
-            <span class="save-date secondary-btns">Save Date</span>
-        </div>
-
-        <div class="events">
-            <div class="event-img">
-                <img src="images/events/matriculation.jpg">
-            </div>
-            <h3>Matriculation for newly admitted students</h3>
-            <p><b>Date:</b> <span>March 27th, 2020</span></p>
-            <p class="description">This is the description that shows the description of the description of the upcomming Matriculation</p>
-            <span class="save-date secondary-btns">Save Date</span>
-        </div>
-
-        <div class="events">
-            <div class="event-img">
-                <img src="images/events/matriculation.jpg">
-            </div>
-            <h3>Matriculation for newly admitted students</h3>
-            <p><b>Date:</b> <span>March 27th, 2020</span></p>
-            <p class="description">This is the description that shows the description of the description of the upcomming Matriculation</p>
-            <span class="save-date secondary-btns">Save Date</span>
-        </div>
-
-        <div class="events">
-            <div class="event-img">
-                <img src="images/events/matriculation.jpg">
-            </div>
-            <h3>Matriculation for newly admitted students</h3>
-            <p><b>Date:</b> <span>March 27th, 2020</span></p>
-            <p class="description">This is the description that shows the description of the description of the upcomming Matriculation</p>
-            <span class="save-date secondary-btns">Save Date</span>
-        </div>
+        
+    <div class="top_title">
+        <span> Upcoming events <i class="pe-7s-angle-down"></i> </span>
     </div>
+
+    <div id="events" class="grid gridbox grid-3 box-shadow">
+
+        <div>
+
+            <!-- Keep this title short, one word -->
+            <h2>Matriculation</h2>
+
+            <span>
+                <i class="pe-7s-date"></i> March 27th
+            </span>
+
+            <p>You are invited to our upcoming matriculation for newly admitted students</p>
+
+            <a> <i class="pe-7s-ribbon"></i> Save </a>
+
+        </div>
+
+        <div>
+
+            <!-- Keep this title short, one word -->
+            <h2>Matriculation</h2>
+            
+            <span>
+                <i class="pe-7s-date"></i> March 27th
+            </span>
+
+            <p>You are invited to our upcoming matriculation for newly admitted students</p>
+
+            <a> <i class="pe-7s-ribbon"></i> Save </a>
+
+        </div>
+
+        <div>
+
+            <!-- Keep this title short, one word -->
+            <h2>Matriculation</h2>
+            
+            <span>
+                <i class="pe-7s-date"></i> March 27th
+            </span>
+
+            <p>You are invited to our upcoming matriculation for newly admitted students</p>
+
+            <a> <i class="pe-7s-ribbon"></i> Save </a>
+
+        </div>
+
+    </div>
+
+
 </section>
